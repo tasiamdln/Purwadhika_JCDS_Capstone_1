@@ -165,8 +165,8 @@ def tambah_buku ():
             intitle = input("Masukkan Title Buku :").title()
             inauthor = input("Masukkan Nama Penulis Buku :").title()
             if cek_duplicate(inbook,intitle,inauthor) == "yes":
-                print("Data sudah ada")
-                continue
+                print("Tambah Buku tidak dapat diproses. Data sudah ada")
+                break
 
             ingenre = input("Masukkan Genre Buku :").title()
             inpublisher = input("Masukkan Penerbit Buku :").title()
